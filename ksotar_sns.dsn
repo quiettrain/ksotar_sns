@@ -1,0 +1,178 @@
+(pcb D:\Projects_q\ksotar_sns\ksotar_sns.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(2015-08-16 BZR 6097, Git b384c94)-product")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  158000 -111000  158000 -126000  183000 -126000  183000 -111000
+            158000 -111000  158000 -111000)
+    )
+    (via "Via[0-1]_600:400_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component Capacitors:CAP_0603
+      (place C1 169000 -121500 front 90 (PN 0.1u))
+    )
+    (component "LEDs:LED_Through-Hole-5mm"
+      (place D1 177000 -118500 front 90 (PN LED))
+    )
+    (component Sensors:TSOP752
+      (place Q1 165000 -118500 front 90 (PN TSOP752XX))
+    )
+    (component Resistors:RES_0603
+      (place R1 171500 -121500 front 90 (PN 100R))
+      (place R2 175500 -123500 front 0 (PN 100R))
+    )
+    (component "Connectors:PLS-2"
+      (place XL1 171500 -124500 front 180 (PN CONN_2))
+    )
+  )
+  (library
+    (image Capacitors:CAP_0603
+      (outline (path signal 150  -1500 0  -1500 800))
+      (outline (path signal 150  -1500 800  1500 800))
+      (outline (path signal 150  1500 800  1500 -800))
+      (outline (path signal 150  1500 -800  -1500 -800))
+      (outline (path signal 150  -1500 -800  -1500 0))
+      (pin Rect[T]Pad_889x1016_um 1 -762 0)
+      (pin Rect[T]Pad_889x1016_um 2 762 0)
+    )
+    (image "LEDs:LED_Through-Hole-5mm"
+      (outline (path signal 203.2  2844.8 -1905  2844.8 1905))
+      (pin Rect[A]Pad_1600x1600_um A -1270 0)
+      (pin Round[A]Pad_1600_um C 1270 0)
+    )
+    (image Sensors:TSOP752
+      (outline (path signal 149.86  -3401.06 2700.02  -3401.06 -299.72))
+      (outline (path signal 149.86  -3401.06 2700.02  3401.06 2700.02))
+      (outline (path signal 149.86  3401.06 2700.02  3401.06 1998.98))
+      (outline (path signal 149.86  -3401.06 2049.78  3401.06 2049.78))
+      (outline (path signal 149.86  3401.06 1998.98  3401.06 -50.8))
+      (outline (path signal 149.86  3401.06 -50.8  3401.06 -299.72))
+      (outline (path signal 149.86  3401.06 -299.72  -3401.06 -299.72))
+      (pin Rect[T]Pad_800.1x1800.86_um 2 -635 0)
+      (pin Rect[T]Pad_800.1x1800.86_um 1 -1905 0)
+      (pin Rect[T]Pad_800.1x1800.86_um 3 635 0)
+      (pin Rect[T]Pad_800.1x1800.86_um 4 1905 0)
+    )
+    (image Resistors:RES_0603
+      (outline (path signal 150  -1500 0  -1500 800))
+      (outline (path signal 150  -1500 800  1500 800))
+      (outline (path signal 150  1500 800  1500 -800))
+      (outline (path signal 150  1500 -800  -1500 -800))
+      (outline (path signal 150  -1500 -800  -1500 0))
+      (pin Rect[T]Pad_900x1000_um 1 -750 0)
+      (pin Rect[T]Pad_900x1000_um 2 750 0)
+    )
+    (image "Connectors:PLS-2"
+      (outline (path signal 150  -1524 1270  3810 1270))
+      (outline (path signal 150  3810 1270  3810 -1270))
+      (outline (path signal 150  3810 -1270  -1524 -1270))
+      (outline (path signal 150  -1524 -1270  -1524 1270))
+      (outline (path signal 150  -1524 1270  -1397 1270))
+      (outline (path signal 150  -1397 1270  -1397 -1270))
+      (outline (path signal 150  -1397 -1270  -1270 -1270))
+      (outline (path signal 150  -1270 -1270  -1270 1270))
+      (outline (path signal 150  3810 -1270  -1270 -1270))
+      (outline (path signal 150  3810 1270  -1270 1270))
+      (outline (path signal 150  -1397 -1270  -1270 -1270))
+      (outline (path signal 150  -1270 1270  -1524 1270))
+      (outline (path signal 150  -1524 1270  -1524 -1270))
+      (outline (path signal 150  -1524 -1270  -1397 -1270))
+      (outline (path signal 150  -1397 -1270  -1397 1143))
+      (outline (path signal 150  3810 1270  3810 -1270))
+      (outline (path signal 150  -1270 -1270  -1270 1270))
+      (pin Rect[A]Pad_1500x1500_um 1 0 0)
+      (pin Round[A]Pad_1500_um 2 2540 0)
+    )
+    (padstack Round[A]Pad_1500_um
+      (shape (circle F.Cu 1500))
+      (shape (circle B.Cu 1500))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1600_um
+      (shape (circle F.Cu 1600))
+      (shape (circle B.Cu 1600))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_800.1x1800.86_um
+      (shape (rect F.Cu -400.05 -900.43 400.05 900.43))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_889x1016_um
+      (shape (rect F.Cu -444.5 -508 444.5 508))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_900x1000_um
+      (shape (rect F.Cu -450 -500 450 500))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1500x1500_um
+      (shape (rect F.Cu -750 -750 750 750))
+      (shape (rect B.Cu -750 -750 750 750))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1600x1600_um
+      (shape (rect F.Cu -800 -800 800 800))
+      (shape (rect B.Cu -800 -800 800 800))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:400_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net GND
+      (pins C1-1 Q1-1 Q1-4 XL1-2)
+    )
+    (net "Net-(C1-Pad2)"
+      (pins C1-2 Q1-2 R1-2)
+    )
+    (net "Net-(D1-PadA)"
+      (pins D1-A R2-2)
+    )
+    (net "Net-(D1-PadC)"
+      (pins D1-C Q1-3)
+    )
+    (net VCC
+      (pins R1-1 R2-1 XL1-1)
+    )
+    (class kicad_default "" GND "Net-(C1-Pad2)" "Net-(D1-PadA)" "Net-(D1-PadC)"
+      VCC
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
